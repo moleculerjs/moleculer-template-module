@@ -10,7 +10,7 @@ module.exports = function(values) {
 				name: "username",
 				message: "Github username:",
 				default() {
-					return exec('git config --get user.name').toString().trim();
+					return exec("git config --get user.name").toString().trim();
 				}
 			},		
 			{
