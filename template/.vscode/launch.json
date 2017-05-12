@@ -8,12 +8,9 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "Launch demo",
-			"program": "${workspaceRoot}\\examples\\index.js",
-			"cwd": "${workspaceRoot}",
-			"args": [
-				"simple"
-			]
+			"name": "Launch program",
+			"program": "${workspaceRoot}\\index.js",
+			"cwd": "${workspaceRoot}"
 		},
 		{
 			"type": "node",
