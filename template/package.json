@@ -22,7 +22,7 @@
   "author": "{{fullName}}",
   "license": "MIT",
   "peerDependencies": {
-    "moleculer": "*"
+    "moleculer": "^0.7.1"
   },
   "devDependencies": {
     "benchmarkify": "2.1.0",
@@ -31,7 +31,7 @@
     "jest": "20.0.0",
     "jest-cli": "20.0.0",
     "lolex": "1.6.0",
-    "moleculer": "*",
+    "moleculer": "^0.7.1",
     "nodemon": "1.11.0",
     "npm-check": "5.4.0"
   },
