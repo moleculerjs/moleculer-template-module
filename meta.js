@@ -38,6 +38,7 @@ module.exports = function(values) {
 To get started:
 
 	cd {{projectName}}
+	
 	npm run dev
 
 		`
