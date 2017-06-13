@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/{{username}}/{{projectName}}.svg?branch=master)](https://travis-ci.org/{{username}}/{{projectName}})
 [![Coverage Status](https://coveralls.io/repos/github/{{username}}/{{projectName}}/badge.svg?branch=master)](https://coveralls.io/github/{{username}}/{{projectName}}?branch=master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/<----hash----->)](https://www.codacy.com/app/mereg-norbert/moleculer-web?utm_source=github.com&amp;utm_medium=referral&amp;utm_content={{username}}/{{projectName}}&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/<----hash----->)](https://www.codacy.com/app/<---username---->/{{projectName}}?utm_source=github.com&amp;utm_medium=referral&amp;utm_content={{username}}/{{projectName}}&amp;utm_campaign=Badge_Grade)
 [![Code Climate](https://codeclimate.com/github/{{username}}/{{projectName}}/badges/gpa.svg)](https://codeclimate.com/github/{{username}}/{{projectName}})
 [![David](https://img.shields.io/david/{{username}}/{{projectName}}.svg)](https://david-dm.org/{{username}}/{{projectName}})
 [![Known Vulnerabilities](https://snyk.io/test/github/{{username}}/{{projectName}}/badge.svg)](https://snyk.io/test/github/{{username}}/{{projectName}})

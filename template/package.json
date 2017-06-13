@@ -12,9 +12,8 @@
     "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
-    "microservices",
-    "microservice",
-    "moleculer"
+    "moleculer",
+    "microservice"
   ],
   "repository": {
     "type": "git",
