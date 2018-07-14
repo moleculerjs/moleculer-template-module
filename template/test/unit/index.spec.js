@@ -7,6 +7,14 @@ describe("Test MyService", () => {
 	const broker = new ServiceBroker();
 	const service = broker.createService(MyService);
 
+	beforeAll(done => {
+		broker.start().then(done);
+	});
+
+	afterAll(() => {
+		broker.stop();
+	});
+
 	it("should be created", () => {
 		expect(service).toBeDefined();
 	});
@@ -22,6 +30,4 @@ describe("Test MyService", () => {
 			expect(res).toBe("Hello John");
 		});
 	});
-
 });
-
