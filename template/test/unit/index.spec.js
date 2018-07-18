@@ -7,13 +7,8 @@ describe("Test MyService", () => {
 	const broker = new ServiceBroker();
 	const service = broker.createService(MyService);
 
-	beforeAll(done => {
-		broker.start().then(done);
-	});
-
-	afterAll(() => {
-		broker.stop();
-	});
+	beforeAll(() => broker.start());
+	afterAll(() => broker.stop());
 
 	it("should be created", () => {
 		expect(service).toBeDefined();
