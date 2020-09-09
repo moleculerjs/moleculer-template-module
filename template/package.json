@@ -46,6 +46,7 @@
     "roots": [
       "../test"
     ],
+    "coverageDirectory": "../coverage",
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "/test/services/"
