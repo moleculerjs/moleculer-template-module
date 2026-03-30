@@ -10,5 +10,5 @@ typings/
 test/
 *.db
 .editorconfig
-.eslintrc.js
+eslint.config.js
 prettier.config.js

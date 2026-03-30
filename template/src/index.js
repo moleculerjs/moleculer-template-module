@@ -21,8 +21,13 @@ module.exports = {
 	 * Actions
 	 */
 	actions: {
-		test(ctx) {
-			return "Hello " + (ctx.params.name || "Anonymous");
+		test: {
+			params: {
+				name: { type: "string", optional: true }
+			},
+			handler(ctx) {
+				return "Hello " + (ctx.params.name || "Anonymous");
+			}
 		}
 	},
 
@@ -43,14 +48,14 @@ module.exports = {
 	/**
 	 * Service started lifecycle event handler
 	 */
-	started() {
+	async started() {
 
 	},
 
 	/**
 	 * Service stopped lifecycle event handler
 	 */
-	stopped() {
+	async stopped() {
 
 	}
 };

@@ -7,9 +7,7 @@
     "dev": "nodemon examples/index.js",
     "ci": "jest --watch",
     "test": "jest --coverage",
-    "lint": "eslint --ext=.js src test",
-    "deps": "npm-check -u",
-    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "lint": "eslint src test"
   },
   "keywords": [
     "moleculer",
@@ -22,23 +20,17 @@
   "author": "{{fullName}}",
   "license": "MIT",
   "peerDependencies": {
-    "moleculer": "^0.14.0"
+    "moleculer": "^0.15.0"
   },
   "devDependencies": {
-    "benchmarkify": "^2.1.2",
-    "coveralls": "^3.1.0",
-    "eslint": "^7.8.1",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-security": "^1.4.0",
-    "jest": "^26.4.2",
-    "jest-cli": "^26.4.2",
-    "moleculer": "^0.14.10",
-    "nodemon": "^2.0.4",
-    "npm-check": "^5.9.2",
-    "prettier": "^2.1.1"
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "eslint-plugin-security": "^3.0.1",
+    "globals": "^16.0.0",
+    "jest": "^30.0.0",
+    "moleculer": "^0.15.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3"
   },
   "jest": {
     "testEnvironment": "node",
@@ -53,6 +45,6 @@
     ]
   },
   "engines": {
-    "node": ">= 10.x.x"
+    "node": ">=22.0.0"
   }
 }

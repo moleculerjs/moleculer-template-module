@@ -1,8 +1,6 @@
 ![Moleculer logo](http://moleculer.services/images/banner.png)
 
-[![Build Status](https://travis-ci.org/{{username}}/{{projectName}}.svg?branch=master)](https://travis-ci.org/{{username}}/{{projectName}})
-[![Coverage Status](https://coveralls.io/repos/github/{{username}}/{{projectName}}/badge.svg?branch=master)](https://coveralls.io/github/{{username}}/{{projectName}}?branch=master)
-[![Known Vulnerabilities](https://snyk.io/test/github/{{username}}/{{projectName}}/badge.svg)](https://snyk.io/test/github/{{username}}/{{projectName}})
+[![CI](https://github.com/{{username}}/{{projectName}}/actions/workflows/ci.yml/badge.svg)](https://github.com/{{username}}/{{projectName}}/actions/workflows/ci.yml)
 
 # {{projectName}} [![NPM version](https://img.shields.io/npm/v/{{projectName}}.svg)](https://www.npmjs.com/package/{{projectName}})
 
@@ -12,7 +10,7 @@
 
 ## Install
 ```
-npm install {{projectName}} --save
+npm install {{projectName}}
 ```
 
 ## Usage

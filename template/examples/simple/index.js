@@ -1,10 +1,10 @@
 "use strict";
 
-let { ServiceBroker } 	= require("moleculer");
-let MyService 			= require("../../index");
+const { ServiceBroker } = require("moleculer");
+const MyService = require("../../index");
 
 // Create broker
-let broker = new ServiceBroker({
+const broker = new ServiceBroker({
 	logger: console
 });
 

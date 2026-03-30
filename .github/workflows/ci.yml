@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [master, next]
+  pull_request:
+    branches: [master, next]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x, 24.x]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install moleculer-cli
+        run: npm install -g moleculer-cli
+
+      - name: Generate project from template
+        run: |
+          echo '{"username":"testuser","fullName":"Test User","projectDescription":"CI test module","serviceName":"mytest"}' > /tmp/answers.json
+          moleculer init --answers /tmp/answers.json ${{ github.workspace }} /tmp/test-module --no-install
+
+      - name: Install dependencies
+        working-directory: /tmp/test-module
+        run: npm install
+
+      - name: Lint
+        working-directory: /tmp/test-module
+        run: npm run lint
+
+      - name: Test
+        working-directory: /tmp/test-module
+        run: npm test
